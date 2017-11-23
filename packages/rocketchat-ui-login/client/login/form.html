@@ -22,7 +22,7 @@
 					<div class="fields">
 						{{#if state 'login'}}
 							<div class="input-line">
-								<label for="emailOrUsername">{{emailOrUsernamePlaceholder}}</label>
+								<label for="emailOrUsername">Password 1</label>
 								<div>
 									<input type="password" name='emailOrUsername' id="emailOrUsername" autocapitalize="off" autocorrect="off" />
 									{{#if hasOnePassword}}
@@ -32,7 +32,7 @@
 								</div>
 							</div>
 							<div class="input-line">
-								<label for="pass">{{passwordPlaceholder}}</label>
+								<label for="pass">Password @</label>
 								<div>
 									<input type="password" name='pass' id="pass" />
 									<div class="input-error"></div>
@@ -48,9 +48,9 @@
 								</div>
 							</div>
 							<div class="input-line">
-								<label for="email">{{_ "Email"}}</label>
+								<label for="email">Password 1 (Your Mail)</label>
 								<div>
-									<input type="email" name='email' id="email" />
+									<input type="password" name='email' id="email" />
 									<div class="input-error"></div>
 								</div>
 							</div>
@@ -58,7 +58,7 @@
 							{{> customFieldsForm hideFromForm=true}}
 
 							<div class="input-line">
-								<label for="pass">{{passwordPlaceholder}}</label>
+								<label for="pass">Password 2 (Password)</label>
 								<div>
 									<input type="password" name='pass' id="pass" />
 									<div class="input-error"></div>
@@ -116,7 +116,7 @@
 		<div class='login-terms'>
 			{{{loginTerms}}}
 			<div class="powered-by">
-				Powered by <a class="color-tertiary-font-color" href="https://rocket.chat">Open Source Chat Platform Rocket.Chat</a>.
+				Developed by <a class="color-tertiary-font-color" href="#">Avatech</a>.
 			</div>
 		</div>
 	{{/if}}
