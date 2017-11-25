@@ -22,7 +22,7 @@
 					<div class="fields">
 						{{#if state 'login'}}
 							<div class="input-line">
-								<label for="emailOrUsername">Password 1</label>
+								<label for="emailOrUsername">Email or Username</label>
 								<div>
 									<input type="password" name='emailOrUsername' id="emailOrUsername" autocapitalize="off" autocorrect="off" />
 									{{#if hasOnePassword}}
@@ -32,7 +32,14 @@
 								</div>
 							</div>
 							<div class="input-line">
-								<label for="pass">Password @</label>
+								<label for="pass">Password</label>
+								<div>
+									<input type="password" name='' id="pass" />
+									<div class="input-error"></div>
+								</div>
+							</div>
+							<div class="input-line">
+								<label for="pass">Confirm Password</label>
 								<div>
 									<input type="password" name='pass' id="pass" />
 									<div class="input-error"></div>
@@ -48,7 +55,7 @@
 								</div>
 							</div>
 							<div class="input-line">
-								<label for="email">Password 1 (Your Mail)</label>
+								<label for="email">E-mail</label>
 								<div>
 									<input type="password" name='email' id="email" />
 									<div class="input-error"></div>
@@ -58,7 +65,7 @@
 							{{> customFieldsForm hideFromForm=true}}
 
 							<div class="input-line">
-								<label for="pass">Password 2 (Password)</label>
+								<label for="pass">Password</label>
 								<div>
 									<input type="password" name='pass' id="pass" />
 									<div class="input-error"></div>
